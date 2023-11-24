@@ -2,14 +2,7 @@ pipeline {
     agent any
 
     stages {
-        stage('Build') {
-            steps {
-                script {
-                    // Clean and build your Java application
-                    sh 'mvn clean install'
-                }
-            }
-        }
+        
 
         stage('Build docker image'){
             steps{
