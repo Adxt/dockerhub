@@ -32,7 +32,7 @@ pipeline {
                     }
 
                     // Push the Docker image to Docker Hub
-                    sh 'docker push atharv321/dockerhub:v1.0'
+                    bat 'docker push atharv321/dockerhub:v1.0'
                 }
             }
         }
