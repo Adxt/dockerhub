@@ -15,7 +15,7 @@ pipeline {
             steps {
                 script {
                     // Build the Docker image
-                    sh 'docker build -t adxt321/firstjava:v1.0 .'
+                    sh 'docker push atharv321/dockerhub:v1.0 .'
                 }
             }
         }
