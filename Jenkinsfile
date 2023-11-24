@@ -29,7 +29,7 @@ pipeline {
                     }
 
                     // Push the Docker image to Docker Hub
-                    sh 'docker push adxt321/firstjava:v1.0'
+                    sh 'docker push atharv321/dockerhub:v1.0'
                 }
             }
         }
