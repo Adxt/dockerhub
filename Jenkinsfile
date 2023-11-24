@@ -2,7 +2,11 @@ pipeline {
     agent any
 
     stages {
-        
+        stage('Build app') {
+            steps {
+                checkout scmGit(branches: [[name: '*/main']], extensions: [], userRemoteConfigs: [[url: 'https://github.com/Adxt/dockerhub.git']])
+            }
+        }
 
         stage('Build docker image'){
             steps{
